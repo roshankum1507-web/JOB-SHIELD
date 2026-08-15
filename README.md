@@ -60,3 +60,45 @@ Detected Warning Signals
 Explanation
         ↓
 Recommended Precautions
+
+Core Features
+1. Job Posting Analyzer
+
+Users can submit a job posting or paste its description for analysis.
+
+2. Recruitment Risk Score
+
+The system generates a risk score representing the likelihood of suspicious characteristics.
+
+Example:
+
+Risk Score: 87 / 100
+Risk Level: HIGH RISK
+3. Explainable Detection
+
+Instead of providing only a result, JobShield explains the detected warning signals.
+
+Possible signals include:
+
+Upfront payment requests
+Unrealistic salary claims
+Urgency-based language
+Suspicious contact information
+Company-domain inconsistencies
+Missing or unverifiable company information
+Requests for sensitive personal information
+4. AI/NLP Analysis
+
+An AI/NLP layer will assist in identifying contextual patterns within job descriptions and recruitment messages that may indicate suspicious behavior.
+
+5. Analysis History
+
+Authenticated users will be able to view previously analyzed job postings and their results.
+
+6. User Feedback
+
+Users can provide feedback about analyzed postings to help improve future detection rules and analysis.
+
+7. Safety Recommendations
+
+The platform will provide practical precautions based on the detected risk signals.
