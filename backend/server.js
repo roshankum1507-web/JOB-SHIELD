@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
+const analysisRoutes = require("./routes/analysisRoutes");
+
 const app = express();
 
 // Middleware
@@ -14,6 +16,9 @@ app.get("/", (req, res) => {
         message: "JOB SHIELD API is running"
     });
 });
+
+// Analysis routes
+app.use("/api", analysisRoutes);
 
 // Server
 const PORT = process.env.PORT || 5000;
