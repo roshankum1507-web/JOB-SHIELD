@@ -5,6 +5,7 @@ require("dotenv").config();
 
 const connectDB = require("./config/db");
 const analysisRoutes = require("./routes/analysisRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.get("/", (req, res) => {
 
 // Analysis routes
 app.use("/api", analysisRoutes);
+app.use("/api/auth", authRoutes);
 
 // Centralized error handler
 app.use(errorHandler);
